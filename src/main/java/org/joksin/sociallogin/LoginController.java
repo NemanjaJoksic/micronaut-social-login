@@ -27,8 +27,7 @@ public class LoginController {
 
     if (Objects.nonNull(jwtCookie)) {
       System.out.println("User is already logged in");
-      return HttpResponse.redirect(new URI("http://localhost:8080/fe/home"))
-          .status(HttpStatus.FOUND);
+      return HttpResponse.redirect(new URI("http://localhost:8080/fe")).status(HttpStatus.FOUND);
     } else {
       System.out.println("User not logged in");
       return HttpResponse.redirect(new URI("/login"))

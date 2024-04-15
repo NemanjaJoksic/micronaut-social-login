@@ -15,11 +15,11 @@ micronaut:
       logout:
         get-allowed: true
 
+    reject-not-found: false
+
     redirect:
       unauthorized:
         enabled: false
-
-    reject-not-found: false
 
     authentication: cookie
 
