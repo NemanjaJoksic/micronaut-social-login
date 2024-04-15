@@ -1,0 +1,35 @@
+micronaut:
+  application:
+    name: micronaut-social-login
+
+  security:
+    oauth2:
+      clients:
+        google:
+          client-id: ${GOOGLE_CLIENT_ID}
+          client-secret: ${GOOGLE_CLIENT_SECRET}
+          openid:
+            issuer: 'https://accounts.google.com'
+
+    endpoints:
+      logout:
+        get-allowed: true
+
+    redirect:
+      unauthorized:
+        enabled: false
+
+    reject-not-found: false
+
+    authentication: cookie
+
+    token:
+      cookie:
+        cookie-name: 'MY_JWT'
+      jwt:
+        enabled: true
+        signatures:
+          secret:
+            generator:
+              secret: 1111111111111111111111111111111111111111
+              jws-algorithm: HS256
