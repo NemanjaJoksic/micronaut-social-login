@@ -1,4 +1,4 @@
-package org.joksin.sociallogin;
+package org.joksin.sociallogin.controller;
 
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
