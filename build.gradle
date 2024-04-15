@@ -24,8 +24,8 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.yaml:snakeyaml") // support for yaml files
 
-    aotPlugins platform("io.micronaut.platform:micronaut-platform:4.3.8")
-    aotPlugins("io.micronaut.security:micronaut-security-aot")
+//    aotPlugins platform("io.micronaut.platform:micronaut-platform:4.3.8")
+//    aotPlugins("io.micronaut.security:micronaut-security-aot")
 }
 
 application {
